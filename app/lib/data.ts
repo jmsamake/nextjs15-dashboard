@@ -11,8 +11,8 @@ import {
 
 import { formatCurrency } from './utils';
 
-//const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'require' });
-const sql = postgres(process.env.POSTGRES_URL!);
+const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'allow' });
+//const sql = postgres(process.env.POSTGRES_URL!);
 
 export async function fetchRevenue() {
   try {
